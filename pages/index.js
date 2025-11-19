@@ -26,6 +26,7 @@ export async function getStaticProps() {
     props: {
       allPostsData,
     },
+    revalidate: 60, // Regenerate page with fresh data every 60 seconds
   };
 }
 
